@@ -6,6 +6,7 @@ object nave {
         pasajeros.add(unPasajero)
     }
 
+
     method bajarNave(unPasajero){
         pasajeros.remove(unPasajero)
     }
@@ -34,10 +35,10 @@ object nave {
         pasajeros.forEach({ p => p.saltar()})
         pasajeros.clear()
     }
-    //method acelerar(){
-    //    if (!pasajeros.esElElegido()) 
-    //        pasajeros.saltar()
-    //}
+    method acelerar1(){
+        if (!pasajeros.esElElegido()) 
+            pasajeros.saltar()
+    }
     method pasajerosSinElElegido() {
         return pasajeros.filter({p => !p.esElElegido()})
     }
