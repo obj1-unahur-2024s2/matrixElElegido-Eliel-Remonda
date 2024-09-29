@@ -39,6 +39,7 @@ object nave {
         if (!pasajeros.esElElegido()) 
             pasajeros.saltar()
     }
+    
     method pasajerosSinElElegido() {
         return pasajeros.filter({p => !p.esElElegido()})
     }
